@@ -10,16 +10,21 @@ Do not connect the Elastic Stack addon to your apps or you'll get the wrong envr
 
 ## Connect your apps
 
-A
-## From the Clever Cloud Console
+Regardless of the language of your app, you'll need to connect your app to the APM on Clever Cloud.
+
+### Step 1: From the Clever Cloud Console
 
 Follow these steps to connect your app deployed on Clever Cloud to Elastic APM.
 
-### Steps
+#### Steps
 
 1. Go to your app menu "Service Dependencies"
 2. Choose "Link applications" and select your APM app.
 3. Restart your app to deploy with new APM environment variables.
+
+### Step 2: Check the connection
+
+Now you can open your APM dashboard and check if your app appears in the _Services_ list. It will appear by the name you gave it on the Console.
 
 ### Not seeing your app in Kibana?
 
