@@ -3,18 +3,28 @@
 
 ## Create an APM Server on Clever Cloud
 
+[Instructions on how to create an ES addon and add APM and Kibana. Eventually add details about what is each app.]
+
+
 Do not connect the Elastic Stack addon to your apps or you'll get the wrong envrironment variables.
 
 ## Connect your apps
 
-Example files in this repository
+A
+## From the Clever Cloud Console
 
-### PHP
+Follow these steps to connect your app deployed on Clever Cloud to Elastic APM.
 
-### NodeJS
+### Steps
 
-### Ruby On Rails
+1. Go to your app menu "Service Dependencies"
+2. Choose "Link applications" and select your APM app.
+3. Restart your app to deploy with new APM environment variables.
 
-### Go
+### Not seeing your app in Kibana?
 
-### Rust
+In some cases (like WordPress), previous steps all you'll need to do, but most apps will need to get the Elastic agent from core.
+
+If you open APM and don't see your app listed in the _Services_ list, it means you'll need to make a quick set up in the code.
+
+Check this repository to find step-by-step instructions that fits your app language. Folders contain ready-to-work-example files that you can just add to your app and commit.
