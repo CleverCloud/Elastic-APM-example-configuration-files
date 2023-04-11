@@ -5,7 +5,6 @@
 
 [Instructions on how to create an ES addon and add APM and Kibana. Eventually add details about what is each app.]
 
-
 Do not connect the Elastic Stack addon to your apps or you'll get the wrong envrironment variables.
 
 ## Connect your apps
@@ -33,3 +32,5 @@ In some cases (like WordPress), previous steps all you'll need to do, but most a
 If you open APM and don't see your app listed in the _Services_ list, it means you'll need to make a quick set up in the code.
 
 Check this repository to find step-by-step instructions that fits your app language. Folders contain ready-to-work-example files that you can just add to your app and commit.
+
+## Export your logs to Elastic
