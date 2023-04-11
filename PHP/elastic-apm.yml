@@ -1,5 +1,5 @@
 # Add this file to your configuration files.
 # For example, in Symfony, add it to "config" folder.
 
-server_url: getenv("ELASTIC_APM_SERVER_URLS")
+server_url: getenv("ELASTIC_APM_SERVER_URL")
 secret_token: getenv("ELASTIC_APM_SECRET_TOKEN")
