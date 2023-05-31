@@ -9,7 +9,9 @@ Follow these steps to connect a NodeJS application to the Elastic APM.
 
 ## Step 2: Add the Elastic APM agent as a dependency
 
-You'll only need to add the Elastic agent as an npm dependency:
+You'll only need to add the Elastic agent as an npm dependency: `npm install elastic-apm-node`.
+
+After building your app, your configuration file should be updated with something like this:
 
 _package.json_
 
@@ -18,6 +20,20 @@ _package.json_
     ...
     "elastic-apm-node": "^3.26.0"
  }
+```
+
+Depending on your stack, you'll need to add some configuration to your app.
+
+Most common set up requires to add this at the very top of your `server.js` file :
+
+_server.js_
+
+```javascript
+const apm = require('elastic-apm-node').start({
+    serviceName: 'uptime-kuma',
+    secretToken: process.env.ELASTIC_APM_SECRET_TOKEN,
+    serverUrl: process.env.ELASTIC_APM_SERVER_URL,
+})
 ```
 
 ### Step 3: Commit and push
