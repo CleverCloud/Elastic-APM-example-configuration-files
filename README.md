@@ -51,5 +51,6 @@ clever drain create ElasticSearch https://xxx-elasticsearch.services.clever-clou
 - `clever drain create` is the command to create a drain
 - `ElasticSearch` allows you to use the Elastic bulk API
 - Fill the rest with **Elasticsearch credentials** you'll find on your Elastic Addon dashboard.
+  - ⚠️ don't forget to add `/_bulk` at the end the **domain name**
 
 ![Elastic creds on Clever Cloud Console](assets/elastic-creds.png)
