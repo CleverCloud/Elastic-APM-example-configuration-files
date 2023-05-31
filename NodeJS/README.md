@@ -30,11 +30,12 @@ _server.js_
 
 ```javascript
 const apm = require('elastic-apm-node').start({
-    serviceName: 'uptime-kuma',
+    serviceName: '<your-service-name>',
     secretToken: process.env.ELASTIC_APM_SECRET_TOKEN,
     serverUrl: process.env.ELASTIC_APM_SERVER_URL,
 })
 ```
+**Note:** `serviceName` is the name your want your service to appear with in your APM service list.
 
 ### Step 3: Commit and push
 
