@@ -1,5 +1,8 @@
 
-# Connect your apps on Clever Cloud to the Elastic APM
+![Clever loves Elastic](assets/clever-elastic.png)
+
+
+# Add Elastic Application Performance Monitoring to your apps on Clever Cloud
 
 ## Create an APM Server on Clever Cloud
 
@@ -34,3 +37,19 @@ If you open APM and don't see your app listed in the _Services_ list, it means y
 Check this repository to find step-by-step instructions that fits your app language. Folders contain ready-to-work-example files that you can just add to your app and commit.
 
 ## Export your logs to Elastic
+
+You can export your logs to your Elastic addon with **clever-tools**, Clever Cloud CLI. See [installation options](https://www.clever-cloud.com/doc/getting-started/cli/) to get started.
+
+Once you got clever-tools installed, just create a log drain with the following commands:
+
+```
+clever drain create ElasticSearch https://xxx-elasticsearch.services.clever-cloud.com/_bulk --username USERNAME --password PASSWORD
+```
+
+**What does this command means?**
+
+- `clever drain create` is the command to create a drain
+- `ElasticSearch` allows you to use the Elastic bulk API
+- Fill the rest with **Elasticsearch credentials** you'll find on your Elastic Addon dashboard.
+
+![Elastic creds on Clever Cloud Console](assets/elastic-creds.png)
