@@ -1,4 +1,4 @@
-# Put this in your config/ forlder
+# Put this in your config/ folder
 
 server_url: <%= ENV["ELASTIC_APM_SERVER_URLS"] %> 
 secret_token: <%= ENV["ELASTIC_APM_SECRET_TOKEN"] %>
