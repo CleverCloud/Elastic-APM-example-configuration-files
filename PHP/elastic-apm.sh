@@ -1,3 +1,6 @@
+# 1. Add this environment variable on Clever Cloud:
+# CC_PRE_RUN_HOOK="./elastic-apm.sh"
+
 # Check that all necessary environment variables are defined
 if [ -z "$ELASTIC_APM_SERVER_URL" ] || \
 [ -z "$ELASTIC_APM_SECRET_TOKEN" ]; then
